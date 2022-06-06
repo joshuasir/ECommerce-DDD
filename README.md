@@ -8,8 +8,6 @@ __E-commerce subdomain distilation__
 ![image](https://user-images.githubusercontent.com/71873035/172210235-b2c71c6c-ac3d-4832-b1f8-c0f5813aceff.png)
 
 
-
-
 __Scenario__
 
 _Product Catalogue_
@@ -39,8 +37,6 @@ _External Forecasting System_
 - Decide stock quantity need
 
 
-
-
 __Ubiquitous Language__
 - Browse: survey goods/products
 - Orders: stated intention to purchase a certain list of product(s).
@@ -61,7 +57,6 @@ __Ubiquitous Language__
 - Product Variant, Option: A various type of product that can be choose.
 
 
-
 Core subdomain : 
   - Product Catalog
     - Product Detailing Bounded Context
@@ -79,34 +74,32 @@ Generic subdomain :
   - External Forecasting System
 
 
-
 The following are the implementation of Core subdomain with .NET technology
 ![image](https://user-images.githubusercontent.com/71873035/172209542-d13054a8-590d-46ef-a38c-eeb5e83d746c.png)
 
 __Domain Events__
-File: in the Events folder of each Domain
-OrderPlacedEvent - order ordering event on the Order . domain
-CartCheckoutEvent - cart checkout event on the Cart . domain
-FillCustomerFormEvent - event filling customer data form in Customer domain
+- File: in the Events folder of each Domain
+- OrderPlacedEvent, order ordering event on the Order domain
+- CartCheckoutEvent, cart checkout event on the Cart domain
+- FillCustomerFormEvent, event filling customer data form in Customer domain
 
 there are also 2 additional event domains for the payment domain
-PaymentCreatedEvent - payment slip issuance event
-PaymentAuthorizedEvent - payment validation event
+- PaymentCreatedEvent, payment slip issuance event
+- PaymentAuthorizedEvent, payment validation event
 
 __Domain Services__
-File: in the Services folder of each Domain
-ShippingCostCalculator - calculates the cost of shipping domain orders
-MailInvoicer - send invoice for domain payment
-NewsLetter - send newsletter to customer domain sales
+- File: in the Services folder of each Domain
+- ShippingCostCalculator - calculates the cost of shipping domain orders
+- MailInvoicer - send invoice for domain payment
+- NewsLetter - send newsletter to customer domain sales
 
-__5 Aggregate Root describing the domain concepts of the problem__
-into smaller parts, that is
+__5 Aggregate Root describing the domain concepts of the problem into smaller parts, that is__
 - Aggregate Order, which is the aggregate root domain problem Order, holds the aggregate root Customer and Cart references
 - Aggregate Payment, is the aggregate root domain problem Payment, holds the reference to the aggregate root Customer and Order
 - Aggregate Customer, is the aggregate root domain problem Customer
 - Aggregate Product, is the aggregate root domain problem Product/Sales
 - Aggregate Cart, an aggregate root domain problem Cart/Sales
-File : Infrastructure/AggregateRoot, Infrastructure/EventSourcedAggregate, aggregate on each Domain
+- File : Infrastructure/AggregateRoot, Infrastructure/EventSourcedAggregate, aggregate on each Domain
 
 __Event Sourcing__
 Each of these aggregates applies the concept of event sourcing so that they have a list of DomainEvents, the nature of the event sourcing implemented by this aggregate is named EventSourcedAggregate. Then for the event storage itself, we use the purpose-built event store package provided by .net core.
