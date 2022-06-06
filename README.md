@@ -1,9 +1,5 @@
-2440015392 - Neil Alexander
-2440028634 - Joshua Sirusstara
-2440107374 - Joshua Wijaya Surja
 
-Session 5
-Domain Events berupa
+#Domain Events
 File : pada folder Events masing masing Domain
 OrderPlacedEvent - event pemesanan order pada domain Order
 CartCheckoutEvent - event checkout cart pada domain Cart
@@ -13,14 +9,13 @@ terdapat juga 2 domain event tambahan untuk domain payment
 PaymentCreatedEvent - event pengeluaran slip payment
 PaymentAuthorizedEvent - event validasi pembayaran
 
-Domain Services berupa
+#Domain Services
 File : pada folder Services masing masing Domain
 ShippingCostCalculator - menghitung biaya pengiriman domain order
 MailInvoicer - mengirim invoice pembayaran domain payment
 NewsLetter - mengirim newsletter ke customer domain sales
 
-Session 6
-kami menentukan 5 Aggregate Root yang menurut kami menggambarkan domain concepts dari problem kami 
+#5 Aggregate Root yang menggambarkan domain concepts dari problem 
 menjadi bagian yang lebih kecil, yaitu
 - Aggregate Order, merupakan aggregate root domain problem Order, memegang referensi aggregate root Customer dan Cart
 - Aggregate Payment, merupakan aggregate root domain problem Payment, memegang referensi aggregate root Customer dan Order
@@ -29,16 +24,15 @@ menjadi bagian yang lebih kecil, yaitu
 - Aggregate Cart, merupakan aggregate root domain problem Cart/Sales
 File : Infrastructure/AggregateRoot, Infrastructure/EventSourcedAggregate, aggregate pada masing masing Domain
 
-Session 7
-Event Sourcing
+#Event Sourcing
 Masing masing dari aggregate ini menerapkan konsep event sourcing sehingga memiliki list of DomainEvent, sifat event sourcing yang diterapkan oleh aggragate ini diberi nama EventSourcedAggregate. Lalu untuk event storage itu sendiri kami menggunakan package purpose‐built event store yang disediakan .net core. 
 File : Infrastructure/EventStored/*, Infrastructure/EventSourcedAggregate
 
-Factories
+#Factories
 Untuk masing masing entitas kami juga membuat Factory berupa method CreateNew yang menangani complex logic dari pembuatan entitas baru, contoh lebih lengkapnya terdapat pada codingan.
 File : model pada masing masing domain dalam folder Domain memiliki method CreateNew
 
-Repositories
+#Repositories
 Selain menerapkan Event Sourcing kami juga mengimplementasikan database, repository disini berperan sebagai penghubung antar storage dan applikasi kami, baik storage event store maupun dbcontext.
 File : Infrastructure/Repository/*
 
