@@ -1,8 +1,9 @@
+# E-Commerce DDD Pattern Design
 
 __E-commerce subdomain distilation__
-Core subdomain : Product Catalog, Orders
-Supporting subdomain : Inventory System, Shipping
-Generic subdomain : Invoicing, External Forecasting System
+Core subdomain : Product Catalog, Orders\n
+Supporting subdomain : Inventory System, Shipping\n
+Generic subdomain : Invoicing, External Forecasting System\n
 
 ![image](https://user-images.githubusercontent.com/71873035/172210235-b2c71c6c-ac3d-4832-b1f8-c0f5813aceff.png)
 
