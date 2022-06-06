@@ -8,6 +8,8 @@ __E-commerce subdomain distilation__
 ![image](https://user-images.githubusercontent.com/71873035/172210235-b2c71c6c-ac3d-4832-b1f8-c0f5813aceff.png)
 
 
+
+
 __Scenario__
 
 _Product Catalogue_
@@ -36,6 +38,9 @@ _Invoicing_
 _External Forecasting System_
 - Decide stock quantity need
 
+
+
+
 __Ubiquitous Language__
 - Browse: survey goods/products
 - Orders: stated intention to purchase a certain list of product(s).
@@ -55,19 +60,25 @@ __Ubiquitous Language__
 - Price: the amount of money expected, required, or given in payment for something.
 - Product Variant, Option: A various type of product that can be choose.
 
+
+
 Core subdomain : 
-  > Product Catalog
+  - Product Catalog
     - Product Detailing Bounded Context
-  > Orders:
+  - Orders:
     - Sales Bounded Context
     - Billing Bounded Context
     - Shipping Bounded Context
+
 Supporting subdomain :  
-  > Inventory System
-  > Shipping
+  - Inventory System
+  - Shipping
+
 Generic subdomain :
-  > Invoicing
-  > External Forecasting System
+  - Invoicing
+  - External Forecasting System
+
+
 
 The following are the implementation of Core subdomain with .NET technology
 ![image](https://user-images.githubusercontent.com/71873035/172209542-d13054a8-590d-46ef-a38c-eeb5e83d746c.png)
@@ -110,6 +121,8 @@ In addition to implementing Event Sourcing, we also implement a database, the re
 File : Infrastructure/Repository/*
 
 Due to time and source limitation, there are still implementation to be made such as implementing CQRS pattern, integrating with WebAPI and frontEnd Web Application.
+
+
 
 references : 
 - https://sd.blackball.lv/library/patterns_principles_and_practices_of_domain-driven_design_(2015).pdf
