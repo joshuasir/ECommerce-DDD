@@ -14,5 +14,10 @@ namespace commerceDomain.Domain
         {
             this.size = size;
         }
+
+        protected override IEnumerable<object> GetAttributesToIncludeInEqualityCheck()
+        {
+            return new List<Object> { size };
+        }
     }
 }
