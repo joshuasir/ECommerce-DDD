@@ -36,22 +36,22 @@ _External Forecasting System_
 
 __Ubiquitous Language__
 Browse: survey goods/products
-Orders: stated intention to purchase a certain list of product(s).
-Cart: container that hold list of user’s selected item to buy.
-Add to Cart: add product to customer cart without doing transaction.
-Checkout: a transaction process to buy product.
-Form: a document to filled by customer.
-Product Catalogue: List of product(s).
-Product Category: a name of group of product(s).
-Shipping/delivery: a method to send purchased product(s) to customer
-Payment: action of paying a bill/invoice.
-Invoicing: an invoice, bill or tab is a commercial document issued by a seller to a buyer,
-relating to a sale transaction and indicating the products, quantities, and agreed upon prices for
-products or services the seller had provided the buyer.(https://en.wikipedia.org/wiki/Invoice)
-Stock: Amount of available quantity.
-Restock: Readd the amount of available quantity..
-Price: the amount of money expected, required, or given in payment for something.
-Product Variant, Option: A various type of product that can be choose.
+- Orders: stated intention to purchase a certain list of product(s).
+- Cart: container that hold list of user’s selected item to buy.
+- Add to Cart: add product to customer cart without doing transaction.
+- Checkout: a transaction process to buy product.
+- Form: a document to filled by customer.
+- Product Catalogue: List of product(s).
+- Product Category: a name of group of product(s).
+- Shipping/delivery: a method to send purchased product(s) to customer
+- Payment: action of paying a bill/invoice.
+- Invoicing: an invoice, bill or tab is a commercial document issued by a seller to a buyer,
+- relating to a sale transaction and indicating the products, quantities, and agreed upon prices for
+- products or services the seller had provided the buyer.(https://en.wikipedia.org/wiki/Invoice)
+- Stock: Amount of available quantity.
+- Restock: Readd the amount of available quantity..
+- Price: the amount of money expected, required, or given in payment for something.
+- Product Variant, Option: A various type of product that can be choose.
 
 The following are the implementation for core Bounded Context
 ![image](https://user-images.githubusercontent.com/71873035/172209542-d13054a8-590d-46ef-a38c-eeb5e83d746c.png)
@@ -96,5 +96,5 @@ File : Infrastructure/Repository/*
 Due to time and source limitation, there are still implementation to be made such as implementing CQRS pattern, integrating with WebAPI and frontEnd Web Application.
 
 references : 
-https://sd.blackball.lv/library/patterns_principles_and_practices_of_domain-driven_design_(2015).pdf
-https://github.com/falberthen/EcommerceDDD
+- https://sd.blackball.lv/library/patterns_principles_and_practices_of_domain-driven_design_(2015).pdf
+- https://github.com/falberthen/EcommerceDDD
