@@ -9,32 +9,32 @@ Generic subdomain : Invoicing, External Forecasting System
 
 __Scenario__
 _Product Catalogue_
-Browse catalogue/collection
-Browse category
-Update product info
-Update category info
-Add to cart
+- Browse catalogue/collection
+- Browse category
+- Update product info
+- Update category info
+- Add to cart
 
 _Orders_
-Order Product
-Fill order form
-Choose Shipping method
-Choose Payment method
+- Order Product
+- Fill order form
+- Choose Shipping method
+- Choose Payment method
 
 _Inventory System_
-Add/restock product
-Fetch product for delivery
+- Add/restock product
+- Fetch product for delivery
 
 _Shipping_
-Dispatch a delivery
+- Dispatch a delivery
 
 _Invoicing_
-Invoice a billing
+- Invoice a billing
 
 _External Forecasting System_
-Decide stock quantity need
+- Decide stock quantity need
 
-Ubiquitous Language
+__Ubiquitous Language__
 Browse: survey goods/products
 Orders: stated intention to purchase a certain list of product(s).
 Cart: container that hold list of user’s selected item to buy.
