@@ -9,6 +9,7 @@ __E-commerce subdomain distilation__
 
 
 __Scenario__
+
 _Product Catalogue_
 - Browse catalogue/collection
 - Browse category
@@ -54,7 +55,21 @@ __Ubiquitous Language__
 - Price: the amount of money expected, required, or given in payment for something.
 - Product Variant, Option: A various type of product that can be choose.
 
-The following are the implementation for core Bounded Context
+Core subdomain : 
+  > Product Catalog
+    - Product Detailing Bounded Context
+  > Orders:
+    - Sales Bounded Context
+    - Billing Bounded Context
+    - Shipping Bounded Context
+Supporting subdomain :  
+  > Inventory System
+  > Shipping
+Generic subdomain :
+  > Invoicing
+  > External Forecasting System
+
+The following are the implementation of Core subdomain with .NET technology
 ![image](https://user-images.githubusercontent.com/71873035/172209542-d13054a8-590d-46ef-a38c-eeb5e83d746c.png)
 
 __Domain Events__
