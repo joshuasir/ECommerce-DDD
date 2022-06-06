@@ -36,7 +36,7 @@ _External Forecasting System_
 - Decide stock quantity need
 
 __Ubiquitous Language__
-Browse: survey goods/products
+- Browse: survey goods/products
 - Orders: stated intention to purchase a certain list of product(s).
 - Cart: container that hold list of user’s selected item to buy.
 - Add to Cart: add product to customer cart without doing transaction.
