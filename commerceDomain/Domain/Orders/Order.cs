@@ -12,12 +12,13 @@ namespace commerceDomain.Domain
 {
     public class Order : EventSourcedAggregate<Guid>
     {
-        public Order(Guid id, Guid customerId,List<CartItem> items,  Currency totalPrice) : base(id)
+        public Order(Guid id, Guid customerId,List<CartItem> items,  Currency totalPrice, OrderStatus status) : base(id)
         {
             this.id = id;
             this.customerId = customerId;
             this.totalPrice = totalPrice;
             this.items = items;
+            this.status = status;
         }
 
         public Order(Guid id) : base(id)
@@ -26,13 +27,13 @@ namespace commerceDomain.Domain
         }
 
         public Guid customerId { get; private set; }
-        public string status { get; set; }
+        public OrderStatus status { get; set; }
         public List<CartItem> items { get; set; }
         public Currency totalPrice { get; private set; }
 
         internal static Order CreateNew(Guid customerId, List<CartItem> items, int totalPrice)
         {
-            return new Order(Guid.NewGuid(), customerId, items, new Currency(totalPrice));
+            return new Order(Guid.NewGuid(), customerId, items, new Currency(totalPrice), new OrderStatus(1));
         }
 
         internal static Order CreateNew(Guid id)
@@ -40,9 +41,9 @@ namespace commerceDomain.Domain
             return new Order(id);
         }
 
-        internal static Order CreateNew(Guid id,Guid customerId, List<CartItem> items, int totalPrice)
+        internal static Order CreateNew(Guid id,Guid customerId, List<CartItem> items, int totalPrice, int status)
         {
-            return new Order(id, customerId, items, new Currency(totalPrice));
+            return new Order(id, customerId, items, new Currency(totalPrice), new OrderStatus(status));
         }
 
         public static Order PlaceOrder(Guid customerId, Cart itemDetails, int totalPrice)
@@ -84,7 +85,7 @@ namespace commerceDomain.Domain
                 customerId = orderSnapshot.customerId,
                 items = orderSnapshot.items,
                 totalPrice = orderSnapshot.totalPrice,
-                status = orderSnapshot.status
+                status = new OrderStatus(orderSnapshot.status)
             };
         }
 

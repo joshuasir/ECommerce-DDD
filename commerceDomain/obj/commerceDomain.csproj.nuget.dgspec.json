@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Joshua\\source\\repos\\commerceDomain\\commerceDomain\\commerceDomain.csproj": {}
+    "C:\\Users\\Joshua\\source\\repos\\commerceDomain\\ECommerce-DDD\\commerceDomain\\commerceDomain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Joshua\\source\\repos\\commerceDomain\\commerceDomain\\commerceDomain.csproj": {
+    "C:\\Users\\Joshua\\source\\repos\\commerceDomain\\ECommerce-DDD\\commerceDomain\\commerceDomain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Joshua\\source\\repos\\commerceDomain\\commerceDomain\\commerceDomain.csproj",
+        "projectUniqueName": "C:\\Users\\Joshua\\source\\repos\\commerceDomain\\ECommerce-DDD\\commerceDomain\\commerceDomain.csproj",
         "projectName": "commerceDomain",
-        "projectPath": "C:\\Users\\Joshua\\source\\repos\\commerceDomain\\commerceDomain\\commerceDomain.csproj",
+        "projectPath": "C:\\Users\\Joshua\\source\\repos\\commerceDomain\\ECommerce-DDD\\commerceDomain\\commerceDomain.csproj",
         "packagesPath": "C:\\Users\\Joshua\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Joshua\\source\\repos\\commerceDomain\\commerceDomain\\obj\\",
+        "outputPath": "C:\\Users\\Joshua\\source\\repos\\commerceDomain\\ECommerce-DDD\\commerceDomain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Joshua\\AppData\\Roaming\\NuGet\\NuGet.Config",

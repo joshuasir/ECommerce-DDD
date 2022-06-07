@@ -10,7 +10,7 @@ namespace commerceDomain.Infrastructure.DataModel
     {
         public Guid id { get; set; }
         public Guid customerId { get; set; }
-        public string status { get; set; }
+        public int status { get; set; }
         public int totalPrice { get; set; }
         
     }

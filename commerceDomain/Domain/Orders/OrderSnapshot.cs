@@ -11,7 +11,7 @@ namespace commerceDomain.Domain.Orders
         public Guid id { get; set; }
         public Guid customerId { get; set; }
         public Currency totalPrice { get; set; }
-        public string status { get; set; }
+        public int status { get; set; }
         public DateTime CreatedAt { get; set; }
         public List<CartItem> items { get; set; }
     }

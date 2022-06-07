@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="commerceDomain.Domain.ValueObject&lt;T&gt;">
+    <Position X="5.5" Y="8.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAgAAAAAAAAAAAAIAAAAAAAAAAAiA=</HashCode>
+      <FileName>Infrastructure\ValueObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Domain.Product">
+    <Position X="28" Y="1.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAIIACBAAAIIgEAAAEAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Domain\Products\Product.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="productSize" />
+      <Property Name="productImage" />
+      <Property Name="productPrice" />
+      <Property Name="categoryDetail" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="commerceDomain.Domain.Payment.Payment">
+    <Position X="24" Y="6.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAADAAIAAAAAAAAgAAAAAAAEAAAEAQABAEAAA=</HashCode>
+      <FileName>Domain\Payment\Payment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="status" />
+      <Property Name="total" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="commerceDomain.Domain.Customer">
+    <Position X="19.5" Y="11.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAALAAAAAgAAAAAgAAAAIEAAAAAAQAQAAAAAA=</HashCode>
+      <FileName>Domain\Customers\Customer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="address" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="commerceDomain.Domain.Carts.Cart">
+    <Position X="14.5" Y="7" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAADAAAAAAAAgAAgAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Domain\Carts\Cart.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="items" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="commerceDomain.Infrastructure.EventSourcedAggregate&lt;TId&gt;">
+    <Position X="19" Y="7.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAABAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\EventSourcedAggregate.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Changes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="commerceDomain.Domain.Carts.CartItem">
+    <Position X="4" Y="11.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAIAAEgAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Carts\CartItem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="currentPrice" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="commerceDomain.Infrastructure.AggregateRoot&lt;TId&gt;">
+    <Position X="24.75" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\AggregateRoot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Infrastructure.Entity&lt;TId&gt;">
+    <Position X="19.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Infrastructure\Entity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Domain.Address">
+    <Position X="14.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAADAAAAAAAAgAAAAAAAAAAAIA=</HashCode>
+      <FileName>Domain\ValueObjects\Address.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Domain.Currency">
+    <Position X="8" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AARAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\ValueObjects\Currency.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Domain.Image">
+    <Position X="12.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Domain\ValueObjects\Image.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Domain.Size">
+    <Position X="10.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\ValueObjects\Size.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Domain.Payment.PaymentStatus">
+    <Position X="29" Y="6.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAQAAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Payment\PaymentStatus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Domain.Order">
+    <Position X="26" Y="12.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AIQAAAAAAHAEAAAAAAgEAgBAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Domain\Orders\Order.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="totalPrice" />
+      <Property Name="status" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="items" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="commerceDomain.Infrastructure.Repository.CartRepository">
+    <Position X="35.5" Y="13.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAIAAAAAIAEAAAAAAAACAAAA=</HashCode>
+      <FileName>Infrastructure\Repository\CartRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_eventStore" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="commerceDomain.Infrastructure.Repository.CustomerRepository">
+    <Position X="38.5" Y="13" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAQAAAAgAAAAAEIAAAAEICEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Repository\CustomerRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_commerceContext" />
+      <Field Name="_eventStore" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="commerceDomain.Infrastructure.Repository.OrderRepository">
+    <Position X="35" Y="16.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAIAAIAAAQAAAAgAAAAAEIAAAAAICAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Infrastructure\Repository\OrderRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_commerceContext" />
+      <Field Name="_eventStore" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="commerceDomain.Infrastructure.Repository.PaymentRepository">
+    <Position X="40.75" Y="19" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAQABAAgAAAAAEIAAAAAICAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Infrastructure\Repository\PaymentRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_commerceContext" />
+      <Field Name="_eventStore" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="commerceDomain.Infrastructure.Repository.ProductRepository">
+    <Position X="41.5" Y="13" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAQAAAAgAgAAAAAAAAIEAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Repository\ProductRepository.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_commerceContext" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="commerceDomain.Infrastructure.CommerceDatabaseContext">
+    <Position X="45" Y="15.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAABAAAAAABAAAAAAEAAAAAAAAAAAAABAAAQ=</HashCode>
+      <FileName>Infrastructure\CommerceDatabaseContext.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Customers" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="System.Data.Entity.DbSet&lt;TEntity&gt;">
+    <Position X="49.25" Y="15.75" Width="2.25" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="commerceDomain.Infrastructure.GetEventStore">
+    <Position X="47.75" Y="11.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACEAAAAEAAAAJIgAAAAEAAQAAAAAEAAAAAAA=</HashCode>
+      <FileName>Infrastructure\EventStored\GetEventStore.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="commerceDomain.Domain.Category">
+    <Position X="31.75" Y="1.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAIgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Products\Category.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Infrastructure.DomainEvent">
+    <Position X="38" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Infrastructure\DomainEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Infrastructure.DataModel.CustomerDTO">
+    <Position X="27.25" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAgAAAAQAAAAAIEAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\DataModel\CustomerDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Infrastructure.DataModel.OrderDetailDTO">
+    <Position X="29.75" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAAAABAAAAAAACBAAAAABAAAAA=</HashCode>
+      <FileName>Infrastructure\DataModel\OrderDetailDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Infrastructure.DataModel.OrderDTO">
+    <Position X="23.25" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAQAAAAAgA=</HashCode>
+      <FileName>Infrastructure\DataModel\OrderDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Infrastructure.DataModel.PaymentDTO">
+    <Position X="27.25" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAEAQABAAAgA=</HashCode>
+      <FileName>Infrastructure\DataModel\PaymentDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Infrastructure.DataModel.ProductDTO">
+    <Position X="23.25" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAACAAAAAACAAAAAYAAAAAEAAAAAAAgAAAAAAgA=</HashCode>
+      <FileName>Infrastructure\DataModel\ProductDTO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Infrastructure.Mapping.CustomerMap">
+    <Position X="21.5" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Mapping\CustomerMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Infrastructure.Mapping.OrderDetailMap">
+    <Position X="31.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Mapping\OrderDetailMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Infrastructure.Mapping.OrderMap">
+    <Position X="21.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Mapping\OrderMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Infrastructure.Mapping.PaymentMap">
+    <Position X="25.5" Y="21.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Mapping\PaymentMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Infrastructure.Mapping.ProductMap">
+    <Position X="25.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Mapping\ProductMap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Domain.Orders.OrderStatus">
+    <Position X="29.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAQAAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Orders\OrderStatus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Domain.Products.Services.NewsLetter">
+    <Position X="47.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAACAAgAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Domain\Products\Services\NewsLetter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Domain.Payment.Services.MailInvoicer">
+    <Position X="45.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAQAAAAAAAAAACAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Payment\Services\MailInvoicer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Domain.Payment.Events.PaymentAuthorizedEvent">
+    <Position X="42.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Payment\Events\PaymentAuthorizedEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Domain.Payment.Events.PaymentCreatedEvent">
+    <Position X="41.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Payment\Events\PaymentCreatedEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Domain.Orders.Services.ShippingCostCalculator">
+    <Position X="49.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAABAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Orders\Services\ShippingCostCalculator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Domain.Orders.Events.OrderPlacedEvent">
+    <Position X="37.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQABAAAAA=</HashCode>
+      <FileName>Domain\Orders\Events\OrderPlacedEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Domain.Customers.Events.UpdFormEvent">
+    <Position X="44.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAACAAAAAAEAgAAAAAAAAAAAoA=</HashCode>
+      <FileName>Domain\Customers\Events\UpdFormEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Domain.Carts.Events.AddItemEvent">
+    <Position X="39.75" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAgAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Carts\Events\AddItemEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Domain.Carts.Events.CartCheckoutEvent">
+    <Position X="42.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Domain\Carts\Events\CartCheckoutEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Domain.Carts.Events.RemoveItemEvent">
+    <Position X="43.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Domain\Carts\Events\RemoveItemEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="commerceDomain.Domain.Carts.Events.UpdQtyEvent">
+    <Position X="39.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAgA=</HashCode>
+      <FileName>Domain\Carts\Events\UpdQtyEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="commerceDomain.Infrastructure.IEventStore">
+    <Position X="45" Y="13.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAEAAAAAIAAAAAAAAQAAAAAEAAAAAAA=</HashCode>
+      <FileName>Infrastructure\EventStored\IEventStore.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
