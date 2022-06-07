@@ -109,21 +109,25 @@ __5 Aggregate Root describing the domain concepts of the problem into smaller pa
 
 File : Infrastructure/AggregateRoot, Infrastructure/EventSourcedAggregate, aggregate on each Domain
 
+  
 __Event Sourcing__
 Each of these aggregates applies the concept of event sourcing so that they have a list of DomainEvents, the nature of the event sourcing implemented by this aggregate is named EventSourcedAggregate. Then for the event storage itself, we use the purpose-built event store package provided by .net core.
 
   File : Infrastructure/EventStored/*, Infrastructure/EventSourcedAggregate
 
+  
 __Factories__
 For each entity we also create a Factory in the form of a CreateNew method which handles the complex logic of creating a new entity, a more complete example is in the coding.
 
   File: the model for each domain in the Domains folder has a CreateNew method
 
+  
 __Repositories__
 In addition to implementing Event Sourcing, we also implement a database, the repository here acts as a liaison between our storage and applications, both storage event stores and dbcontext.
 
   File : Infrastructure/Repository/*
 
+  
 Due to time and source limitation, there are still implementation to be made such as implementing CQRS pattern, integrating with WebAPI and frontEnd Web Application.
 
 
