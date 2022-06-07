@@ -8,7 +8,7 @@ __E-commerce subdomain distilation__
 - Generic subdomain : Invoicing, External Forecasting System
 
 ![image](https://user-images.githubusercontent.com/71873035/172210235-b2c71c6c-ac3d-4832-b1f8-c0f5813aceff.png)
-
+_Reference: Implementing Domain-Driven Design, Vaughn Vernon_
 
 __Scenario__
 
