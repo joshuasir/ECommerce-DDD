@@ -107,25 +107,25 @@ __5 Aggregate Root describing the domain concepts of the problem into smaller pa
 - Aggregate Product, is the aggregate root domain problem Product/Sales
 - Aggregate Cart, an aggregate root domain problem Cart/Sales
 
-File : Infrastructure/AggregateRoot, Infrastructure/EventSourcedAggregate, aggregate on each Domain
+_File : Infrastructure/AggregateRoot, Infrastructure/EventSourcedAggregate, aggregate on each Domain_
 
   
 __Event Sourcing__
 Each of these aggregates applies the concept of event sourcing so that they have a list of DomainEvents, the nature of the event sourcing implemented by this aggregate is named EventSourcedAggregate. Then for the event storage itself, we use the purpose-built event store package provided by .net core.
 
-  File : Infrastructure/EventStored/*, Infrastructure/EventSourcedAggregate
+  _File : Infrastructure/EventStored/*, Infrastructure/EventSourcedAggregate_
 
   
 __Factories__
 For each entity we also create a Factory in the form of a CreateNew method which handles the complex logic of creating a new entity, a more complete example is in the coding.
 
-  File: the model for each domain in the Domains folder has a CreateNew method
+  _File: the model for each domain in the Domains folder has a CreateNew method_
 
   
 __Repositories__
 In addition to implementing Event Sourcing, we also implement a database, the repository here acts as a liaison between our storage and applications, both storage event stores and dbcontext.
 
-  File : Infrastructure/Repository/*
+  _File : Infrastructure/Repository/*_
 
   
 Due to time and source limitation, there are still implementation to be made such as implementing CQRS pattern, integrating with WebAPI and frontEnd Web Application.
