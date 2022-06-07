@@ -81,6 +81,9 @@ The following are the implementation of Core subdomain with .NET technology
 
 ![UML](https://user-images.githubusercontent.com/71873035/172282963-5d273039-c444-410b-8ed7-ac7bb665d0e0.png)
 
+__Entity and Value Objects__
+Value Object as seen in the diagram inherits ValueObject class while Entity inherits EventSourcedAggregate which inherits Entity<TId> class
+
 __Domain Events__
 - File: in the Events folder of each Domain
 - OrderPlacedEvent, order ordering event on the Order domain
