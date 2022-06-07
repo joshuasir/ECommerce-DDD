@@ -86,20 +86,22 @@ __Entity and Value Objects__
 Value Object as seen in the diagram inherits ValueObject class while Entity inherits EventSourcedAggregate which inherits Entity<TId> class
 
 __Domain Events__
-- File: in the Events folder of each Domain
 - OrderPlacedEvent, order ordering event on the Order domain
 - CartCheckoutEvent, cart checkout event on the Cart domain
 - FillCustomerFormEvent, event filling customer data form in Customer domain
+  
+ _File: in the Events folder of each Domain_
 
 there are also 2 additional event domains for the payment domain
 - PaymentCreatedEvent, payment slip issuance event
 - PaymentAuthorizedEvent, payment validation event
 
 __Domain Services__
-- File: in the Services folder of each Domain
 - ShippingCostCalculator - calculates the cost of shipping domain orders
 - MailInvoicer - send invoice for domain payment
 - NewsLetter - send newsletter to customer domain sales
+  
+  _File: in the Services folder of each Domain_
 
 __5 Aggregate Root describing the domain concepts of the problem into smaller parts, that is__
 - Aggregate Order, which is the aggregate root domain problem Order, holds the aggregate root Customer and Cart references
