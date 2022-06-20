@@ -127,7 +127,7 @@ namespace commerceDomain.Infrastructure.Repository
             var stream = _eventStore.GetStream(
             streamName, fromEventNumber, toEventNumber
             );
-            var order = Order.CreateNew(id);
+            var order = new Order(id);
             foreach (var @event in stream)
             {
                 order.Apply(@event);

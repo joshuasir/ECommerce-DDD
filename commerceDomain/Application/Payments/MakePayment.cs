@@ -4,7 +4,6 @@ using commerceDomain.Domain.Orders;
 using commerceDomain.Domain.Payment;
 using commerceDomain.Domain.Payment.Events;
 using commerceDomain.Domain.Payment.Services;
-using commerceDomain.Domain.Payment;
 using commerceDomain.Infrastructure;
 using System;
 using System.Collections.Generic;

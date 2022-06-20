@@ -10,8 +10,8 @@ namespace commerceDomain.Domain.Carts
     public class Cart : EventSourcedAggregate<Guid>
     {
 
-        public Guid customerId { get; set; }
-        public List<CartItem> items { get; set; }
+        public Guid customerId { get; private set; }
+        public List<CartItem> items { get; private set; }
 
         public int calcTotalPrice()
         {
@@ -36,10 +36,7 @@ namespace commerceDomain.Domain.Carts
         {
             return new Cart(Guid.NewGuid(), customerId);
         }
-        public static Cart CreateNew(Guid id, Guid customerId)
-        {
-            return new Cart(id, customerId);
-        }
+
         public override void Apply(DomainEvent @event)
         {
             When((dynamic)@event);

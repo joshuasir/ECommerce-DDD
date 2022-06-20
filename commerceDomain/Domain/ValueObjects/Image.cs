@@ -14,9 +14,9 @@ namespace commerceDomain.Domain
             this.title = title;
             this.imageExtension = imageUrl.Split('.').Last();
         }
-        public string imageUrl { get; set; }
-        public string title { get; set; }
-        public string imageExtension { get; set; }
+        public string imageUrl { get; private set; }
+        public string title { get; private set; }
+        public string imageExtension { get; private set; }
 
         protected override IEnumerable<object> GetAttributesToIncludeInEqualityCheck()
         {

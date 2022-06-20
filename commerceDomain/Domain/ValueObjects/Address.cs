@@ -8,9 +8,9 @@ namespace commerceDomain.Domain
 {
     public class Address : ValueObject<Address>
     {
-        public string street { get; set; }
-        public string postCode { get; set; }
-        public string city { get; set; }
+        public string street { get; private set; }
+        public string postCode { get; private set; }
+        public string city { get; private set; }
 
         public Address(string street, string postCode, string city)
         {

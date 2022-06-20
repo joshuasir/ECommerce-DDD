@@ -103,7 +103,7 @@ namespace commerceDomain.Infrastructure.Repository
             var stream = _eventStore.GetStream(
             streamName, fromEventNumber, toEventNumber
             );
-            var customer = Customer.CreateNew(id);
+            var customer = new Customer(id);
             foreach (var @event in stream)
             {
                 customer.Apply(@event);

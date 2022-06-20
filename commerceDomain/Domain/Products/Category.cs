@@ -22,9 +22,9 @@ namespace commerceDomain.Domain
             base.id = id;
         }
 
-        public string categoryName { get; set; }
+        public string categoryName { get; private set; }
 
-        public string categoryDescription { get; set; }
+        public string categoryDescription { get; private set; }
 
         public static Category CreateNew(string categoryName, string categoryDescription)
         {

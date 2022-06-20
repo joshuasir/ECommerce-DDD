@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RP0HkO+Dw0MMsyuMM6FbXOIK2aluwslfd8UV4eYapPeHBotf8xoecB4tdh9BLfx/hyOdq9jKSNO3vtvTJ7Ce2g==",
+  "dgSpecHash": "DzQgjfMGYGjJZTpSX4slel2aV3wCuuxCs8NZf6g2HWzyRB3HwQzEdtkzTcUgQLuK3Heq0tLuU/gJez7kvJtHhQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Joshua\\source\\repos\\commerceDomain\\ECommerce-DDD\\commerceDomain\\commerceDomain.csproj",
+  "projectFilePath": "C:\\Users\\Joshua\\source\\repos\\commerceDomain\\commerceDomain\\commerceDomain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Joshua\\.nuget\\packages\\chinchilla.logging\\4.1.124.102\\chinchilla.logging.4.1.124.102.nupkg.sha512",
     "C:\\Users\\Joshua\\.nuget\\packages\\chinchilla.statemanagement\\4.1.51.31\\chinchilla.statemanagement.4.1.51.31.nupkg.sha512",

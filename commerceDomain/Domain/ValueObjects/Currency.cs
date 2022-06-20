@@ -8,8 +8,8 @@ namespace commerceDomain.Domain
 {
     public class Currency : ValueObject<Currency>
     {
-        public int value { get; set; }
-        public string formatted_value { get; set; }
+        public int value { get; private set; }
+        public string formatted_value { get; private set; }
 
         public Currency(int value) {
             this.value = value;

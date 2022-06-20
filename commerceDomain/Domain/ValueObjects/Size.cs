@@ -8,7 +8,7 @@ namespace commerceDomain.Domain
 {
     public class Size : ValueObject<Size>
     {
-        public char size{get; set;}
+        public char size{get; private set; }
         
         public Size(char size)
         {

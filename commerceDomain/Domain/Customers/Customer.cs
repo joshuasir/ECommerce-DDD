@@ -57,10 +57,6 @@ namespace commerceDomain.Domain
             return new Customer(Guid.NewGuid(), name, email, new Address(street, postcode, city));
         }
 
-        public static Customer CreateNew(Guid id)
-        {
-            return new Customer(id);
-        }
         public static Customer CreateNew(Guid id,string name, string email, string city, string postcode, string street)
         {
             return new Customer(id, name, email, new Address(street, postcode, city));

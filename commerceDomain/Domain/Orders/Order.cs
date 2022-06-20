@@ -27,18 +27,13 @@ namespace commerceDomain.Domain
         }
 
         public Guid customerId { get; private set; }
-        public OrderStatus status { get; set; }
-        public List<CartItem> items { get; set; }
+        public OrderStatus status { get; private set; }
+        public List<CartItem> items { get; private set; }
         public Currency totalPrice { get; private set; }
 
         internal static Order CreateNew(Guid customerId, List<CartItem> items, int totalPrice)
         {
             return new Order(Guid.NewGuid(), customerId, items, new Currency(totalPrice), new OrderStatus(1));
-        }
-
-        internal static Order CreateNew(Guid id)
-        {
-            return new Order(id);
         }
 
         internal static Order CreateNew(Guid id,Guid customerId, List<CartItem> items, int totalPrice, int status)
