@@ -1,6 +1,6 @@
 # E-Commerce DDD Pattern Design
 
-The purpose of this project is to use the DDD approach in trying to solve an E-commerce system infrastructure. This documentation describes the problem domain in the form of text explanations, UML diagrams, and implementation of concepts in coding. The implementation of coding using .NET Core technology, has not been integrated to an application.
+The purpose of this project is to use the DDD approach in trying to solve an E-commerce system architecture. This documentation describes the problem domain in the form of text explanations, UML diagrams, and implementation of concepts in coding. The implementation of coding using .NET Core technology, has not been integrated to an application.
 
 __E-commerce subdomain distilation__
 - Core subdomain : Product Catalog, Orders
